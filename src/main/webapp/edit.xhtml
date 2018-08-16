@@ -18,9 +18,11 @@
                 <hr />
                 <h:form>
                     <h:panelGrid columns="2">
-                        <h:outputLabel value="Kullanıcı Adı:" />
+                         <h:outputLabel value="id:" />
+                        <h:inputText value="#{users.user.id}"  />
+                        <h:outputLabel value="username:" />
                         <h:inputText value="#{users.user.userName}" required="true" requiredMessage="Kullanıcı Adı Alanını Boş Bırakmayınız..." />
-                        <h:outputLabel value="Parola :" />
+                        <h:outputLabel value="Pwd :" />
                         <h:inputSecret value="#{users.user.password}" required="true" requiredMessage="Parola Alanını Boş Bırakmayınız..." />
                         <h:outputLabel value="Email :" />
                         <h:inputText value="#{users.user.email}" required="true" requiredMessage="Email Alanını Boş Bırakmayınız..."/>
